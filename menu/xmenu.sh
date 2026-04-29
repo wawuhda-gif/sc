@@ -5,7 +5,7 @@ j="\033[0;33m"
 function lane() {
 echo -e "${y}────────────────────────────────────────────${exitsc}"
 }
-url_izin="https://raw.githubusercontent.com/zhets/izinsc/main/ip"
+url_izin="https://github.com/chanelog/izin/raw/main/ip"
 ipsaya=$(curl -sS ipv4.icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
